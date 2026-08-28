@@ -21,7 +21,7 @@ function Search({onSearchChange, inputSearch, totalPosts, onKeySearch, search}) 
                 <button onClick={onSearchChange} className="btn btn-neutral">Cari</button>
             </div>
         
-            <p className="text-sm text-gray-600 mb-3">Ditemukan {totalPosts} data dengan kata kunci {search === "" ? "[keyword]" : search}</p>
+            <p className="text-sm text-gray-600 mb-3">Found {totalPosts} data using '{search === "" ? "[key]" : search}' keyword</p>
         </>
     )
 }
