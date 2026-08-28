@@ -4,7 +4,7 @@ export const blogs = async () => {
         fetch("https://jsonplaceholder.typicode.com/users")
     ]);
 
-    if (!postsResponse || !usersResponse) {
+    if (!postsResponse.ok || !usersResponse.ok) {
         throw new Error("Could not fetch blog data!");
     }
 

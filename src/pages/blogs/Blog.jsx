@@ -13,7 +13,7 @@ function Blog() {
                     {posts.map((post) => {
                         const user = users.find((users) => users.id === post.userId);
 
-                        return <BlogCard key={post.id} {...post} {...user} />
+                        return <BlogCard key={post.id} title={post.title} id={post.id} name={user.name} />
                     })}
                 </div>
 
