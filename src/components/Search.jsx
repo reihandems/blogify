@@ -18,7 +18,7 @@ function Search({onSearchChange, inputSearch, totalPosts, onKeySearch, search}) 
                     <input onChange={(event) => inputSearch(event.target.value)} value={search} onKeyDown={onKeySearch} type="text" className="grow" placeholder="Search Article..." />
                     <kbd className="kbd kbd-sm">Enter</kbd>
                 </label>
-                <button onClick={onSearchChange} className="btn btn-neutral">Cari</button>
+                <button onClick={onSearchChange} className="btn btn-neutral">Search</button>
             </div>
         
             <p className="text-sm text-gray-600 mb-3">Found {totalPosts} data using '{search === "" ? "[key]" : search}' keyword</p>
