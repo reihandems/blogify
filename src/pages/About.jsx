@@ -4,7 +4,7 @@ function About() {
     return (
         <>
             <div className="flex flex-col min-h-screen justify-center items-center p-8">
-                <h1 className="text-3xl mb-3">About <span className="font-black">Blogify</span></h1>
+                <h1 className="text-2xl mb-3">About <span className="font-black">Blogify</span></h1>
                 <div className="max-w-120 mb-8">
                     <p className="text-justify"><span className="font-bold">Blogify</span> is a personal learning project created to practice building modern web applications with React.js. The project focuses on component-based development, API fetching, routing, and responsive UI design.</p>
                 </div>
@@ -12,7 +12,7 @@ function About() {
                 <h1 className="text-2xl mb-3">Technologies</h1>
                 <div className="flex flex-wrap gap-4 mb-8 w-full max-w-120">
                     {AboutData.map((props, index) => (
-                        <div key={index} className="card w-96 bg-base-100 card-sm shadow-sm flex-1 min-w-40">
+                        <div key={index} className="card w-96 bg-base-100 card-sm shadow-sm/20 flex-1 min-w-40">
                             <div className="card-body">
                                 <div className="flex items-center gap-2">
                                     <div className="avatar">
