@@ -1,0 +1,26 @@
+[
+    {
+        "title": "React.js Full Course 2026",
+        "date": "2026-17-3",
+        "tags": ["react", "frontend"],
+        "isNew": true
+    },
+    {
+        "title": "Node.js + Express.js Full Course 2026",
+        "date": "2026-6-2",
+        "tags": ["nodejs", "express", "backend"],
+        "isNew": false
+    },
+    {
+        "title": "MongoDB Full Course 2026",
+        "date": "2026-11-1",
+        "tags": ["mongodb", "backend", "database"],
+        "isNew": false
+    },
+    {
+        "title": "MERN Full-Stack Crash Course 2026",
+        "date": "2026-18-1",
+        "tags": ["mern", "frontend", "backend", "database"],
+        "isNew": false
+    }
+]

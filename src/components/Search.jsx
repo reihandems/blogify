@@ -1,12 +1,12 @@
 function Search() {
     return (
         <>
-            <label class="input mb-3 max-w-96 w-full">
-                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <label className="input mb-2">
+                <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <g
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                    stroke-width="2.5"
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                    strokeWidth="2.5"
                     fill="none"
                     stroke="currentColor"
                     >
@@ -14,9 +14,12 @@ function Search() {
                     <path d="m21 21-4.3-4.3"></path>
                     </g>
                 </svg>
-                <input type="search" class="grow" placeholder="Search" />
-                <kbd class="kbd kbd-sm">Enter</kbd>
+                <input type="search" className="grow" placeholder="Search" />
+                <kbd className="kbd kbd-sm">⌘</kbd>
+                <kbd className="kbd kbd-sm">K</kbd>
             </label>
+        
+            <p className="text-sm text-gray-600 mb-3">Ditemukan 0 data dengan kata kunci</p>
         </>
     )
 }
