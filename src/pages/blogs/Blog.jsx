@@ -9,7 +9,7 @@ function Blog() {
                 <h1 className="text-3xl font-bold">Blogs</h1>
                 <p className="text-sm text-gray-500 mb-3">List of your favorite blogs</p>
 
-                <div className="flex flex-wrap max-w-150 gap-4">
+                <div className="flex flex-wrap gap-4">
                     {posts.map((post) => {
                         const user = users.find((users) => users.id === post.userId);
 
