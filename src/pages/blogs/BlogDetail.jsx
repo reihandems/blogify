@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom"
 import { Link } from "react-router-dom";
 
 function BlogDetail() {
-    const blog = useLoaderData();
+    const { post, user } = useLoaderData();
 
     return (
         <>
@@ -17,8 +17,9 @@ function BlogDetail() {
                 </div>
                 <div className="divider"></div>
 
-                <h3 className="text-xl font-bold mb-3">{blog.title}</h3>
-                <p className="text-sm">{blog.body}</p>
+                <h3 className="text-xl font-bold mb-3">{post.title}</h3>
+                <p className="text-sm mb-3">{post.body}</p>
+                <p className="text-sm text-gray-600">Author: {user?.name}</p>
             </div>
         </>
     )

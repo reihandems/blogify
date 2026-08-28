@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom"
 import BlogCard from "../../components/BlogCard";
 
 function Blog() {
-    const blog = useLoaderData();
+    const { posts, users } = useLoaderData();
     return (
         <>
             <div className="flex flex-col justify-center items-center min-h-screen p-8">
@@ -10,9 +10,11 @@ function Blog() {
                 <p className="text-sm text-gray-500 mb-3">List of your favorite blogs</p>
 
                 <div className="flex flex-wrap max-w-150 gap-4">
-                    {blog.map((blog) => (
-                        <BlogCard {...blog} />
-                    ))}
+                    {posts.map((post) => {
+                        const user = users.find((users) => users.id === post.userId);
+
+                        return <BlogCard key={post.id} {...post} {...user} />
+                    })}
                 </div>
 
             </div>
