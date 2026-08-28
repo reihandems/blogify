@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 export const RootLayout = () => {
     return (
         <>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="font-mono navbar bg-base-100 shadow-sm">
                 <div className="flex-1">
                     <NavLink to={'/'} className="btn btn-ghost text-xl">Blogify</NavLink>
                 </div>
@@ -28,7 +28,9 @@ export const RootLayout = () => {
                 </div>
             </div>
 
-            <Outlet />
+            <div className="font-mono">
+                <Outlet />
+            </div>
         </>
     )
 }
